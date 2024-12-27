@@ -27,7 +27,7 @@ Pastikan Anda sudah menginstal:
 - **Database Server** (MySQL).
 - **Git** (untuk cloning repository).
 
-### Langkah-langkah Instalasi
+### Langkah Instalasi
 1. **Clone Repository**
    ```bash
    git clone https://github.com/SatyaRachman/WinniEsport.github.io.git
