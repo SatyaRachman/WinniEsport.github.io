@@ -24,15 +24,18 @@
         <div class="min-vh-100 d-flex flex-column justify-content-between">
             @include('front.layout.navbar')
             <!-- Page header with logo and tagline-->
-            <header class="py-5 bg-light border-bottom mb-4">
+            <header class="py-5 bg-dark">
                 <div class="container">
-                    <div class="text-center my-5">
-                        <h1 class="fw-bolder">{{ $config['title'] }}</h1>
-                        <p class="lead mb-0">{{ $config['caption'] }}</p>
+                    <div class="text-center my-5" style="background-image: url('{{ asset('mlwp.jpeg') }}'); background-size: cover; background-position: center; color:antiquewhite">
+                        <h1>Selamat datang di WinniEsport</h1>
+                        <p>Website Portal Berita seputar MLBB</p>
                     </div>
                 </div>
             </header>
+         <!-- Content Section with dynamic background -->
+    <div class="@yield('content-class', 'bg-dark')"> <!-- Default to bg-light if no content-class is provided -->
         @yield('content')
+    </div>
 
              <!-- Footer-->
              <footer class="py-5 bg-dark">

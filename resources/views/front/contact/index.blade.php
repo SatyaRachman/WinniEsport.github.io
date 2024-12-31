@@ -1,16 +1,16 @@
 @extends('front.layout.template')
 
 @push('meta-seo')
-    <meta name="description" value="Contact Blog Laravel, seputar E-sport">
-    <meta name="keyword" value="contact BlogLaravel, kontak Blog Laravel">
-    <meta property="og:title" content="Contact Laravel">
+    <meta name="description" value="Contact STMIK Mardira Indonesia">
+    <meta name="keyword" value="contact STMIK Mardira Indonesia, kontak STMIK Mardira Indonesia">
+    <meta property="og:title" content="Contact STMIK Mardira Indonesia">
     <meta peroperty="og:url" value="{{ url()->current() }}" />
-    <meta peroperty="og:site_name" content="BlogLaravel" />
-    <meta property="og:description" value="Contact BlogLaravel, Seputar informasi E-sports ">
+    <meta peroperty="og:site_name" content="Contact STMIK Mardira Indonesia" />
+    <meta property="og:description" value="Contact STMIK Mardira Indonesia">
     <meta property="og:image" value="https://winnicode.com/mazer/images/banner-logo.png">
 @endpush
 
-@section('title', 'Contact Laravel')
+@section('title', 'Contact STMIK Mardira Indonesia')
 
 @section('content')
 <div class="container">
@@ -26,7 +26,7 @@
                 </div>
                 <div class="card-body">
                     <div class="small text-muted">{{ date('d/m/Y') }}</div>
-                    <h2 class="card-title">Contact Blog</h2>
+                    <h2 class="card-title">Contact STMIK Mardira Indonesia</h2>
                     <p class="card-text">
                        <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.

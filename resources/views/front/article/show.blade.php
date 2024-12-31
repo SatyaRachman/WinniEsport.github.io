@@ -23,7 +23,7 @@
             <div class="card mb-4 shadow-sm">
                 <a href="{{ url('p/'. $article->slug) }}">
                     <img class="card-img-top single-img" src="{{ asset('storage/back/'. $article->img) }}" alt="{{ $article->title }}" /></a>
-                <div class="card-body">
+                <div class="card-body bg-dark">
                     <div class="small text-muted">
                        <span class="ml-2"> {{ $article->created_at->format('d-m-Y') }}</span>
                        <span class="ml-2">
@@ -33,7 +33,7 @@
                        <span class="ml-2"> {{ $article->views }}x</span>
                     </div>
                     <h1 class="card-title">{{ $article->title }}</h1>
-                    <p class="card-text">
+                    <p class="card-text" style="color: white">
                      {!! $article->desc !!}
                     </p>
 

@@ -1,7 +1,7 @@
 <div class="col-lg-4" data-aos="fade-left">
     <!-- Search widget-->
-    <div class="card mb-4 shadow-sm">
-        <div class="card-header">Search</div>
+    <div class="card mb-4 shadow-sm bg-dark">
+        <div class="card-header" style="color: white;">Search</div>
         <form action="{{ route('search') }}" method="POST">
             @csrf
             <div class="card-body">
@@ -13,8 +13,8 @@
         </form>
     </div>
     <!-- Categories widget-->
-    <div class="card mb-4 shadow-sm">
-        <div class="card-header">Categories</div>
+    <div class="card mb-4 shadow-sm bg-dark">
+        <div class="card-header" style="color: white;">Categories</div>
         <div class="card-body">
                 <div>
                         @foreach ($categories as $item)
@@ -24,22 +24,13 @@
                 </div>
                 </div>
     </div>
-    <!-- Side widget-->
-    <div class="card mb-4 shadow-sm">
-        <div class="card-header">Side Widget</div>
-        <div class="card-body">
-            <a href="https://play.google.com/store/apps/details?id=com.mobile.legends&hl=en-US&pli=1" target="_blank" rel="noopener noreferrer">
-                <img src="{{ $config['ads_widget'] }}" alt="ads_widget" class="img_fluid" width="80%">
-            </a>
-        </div>
-    </div>
 
         <!-- populer post -->
-        <div class="card mb-4 shadow-sm">
-            <div class="card-header">Popular Posts</div>
+        <div class="card mb-4 shadow-sm bg-dark">
+            <div class="card-header" style="color: white;">Popular Posts</div>
             <div class="card-body">
                 @foreach ($popular_post as $item)
-                    <div class="card mb-3">
+                    <div class="card mb-3 bg-dark">
                         <div class="row">
                             <div class="col-md-3">
                                 <img src="{{ asset('storage/back/'. $item->img) }}" alt="{{ $item->title }}" class="img-fluid">
