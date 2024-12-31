@@ -32,3 +32,19 @@ Pastikan Anda sudah menginstal:
    ```bash
    git clone https://github.com/SatyaRachman/WinniEsport.github.io.git
    cd WinniEsport.github.io
+   
+### Melakukan migrasi pada project
+- **Membuat Model dan Migrasi**
+Untuk membuat model dan migrasi secara bersamaan, gunakan perintah:
+
+
+bash
+php artisan make:model NamaModel -m
+
+
+Contoh:
+
+
+bash
+php artisan make:model Artikel -m
+
